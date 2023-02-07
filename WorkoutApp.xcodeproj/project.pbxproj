@@ -10,9 +10,11 @@
 		D5BF57832992C52C00A6C237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BF57822992C52C00A6C237 /* AppDelegate.swift */; };
 		D5BF57852992C52C00A6C237 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BF57842992C52C00A6C237 /* SceneDelegate.swift */; };
 		D5BF57872992C52C00A6C237 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BF57862992C52C00A6C237 /* ViewController.swift */; };
-		D5BF578A2992C52C00A6C237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BF57882992C52C00A6C237 /* Main.storyboard */; };
 		D5BF578C2992C52D00A6C237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BF578B2992C52D00A6C237 /* Assets.xcassets */; };
 		D5BF578F2992C52D00A6C237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BF578D2992C52D00A6C237 /* LaunchScreen.storyboard */; };
+		D5BF579A2992D05A00A6C237 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BF57992992D05A00A6C237 /* TabBarController.swift */; };
+		D5BF579E2992D39200A6C237 /* UIColor + ext .swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BF579D2992D39200A6C237 /* UIColor + ext .swift */; };
+		D5BF57A02992D67C00A6C237 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BF579F2992D67C00A6C237 /* Resources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		D5BF57822992C52C00A6C237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5BF57842992C52C00A6C237 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D5BF57862992C52C00A6C237 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D5BF57892992C52C00A6C237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5BF578B2992C52D00A6C237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5BF578E2992C52D00A6C237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5BF57902992C52D00A6C237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5BF57992992D05A00A6C237 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D5BF579D2992D39200A6C237 /* UIColor + ext .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext .swift"; sourceTree = "<group>"; };
+		D5BF579F2992D67C00A6C237 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		D5BF57812992C52C00A6C237 /* WorkoutApp */ = {
 			isa = PBXGroup;
 			children = (
+				D5BF579B2992D35300A6C237 /* Helpers */,
+				D5BF57972992C5D600A6C237 /* Application */,
+				D5BF57862992C52C00A6C237 /* ViewController.swift */,
+				D5BF57992992D05A00A6C237 /* TabBarController.swift */,
+				D5BF57982992C60400A6C237 /* SupportingFiles */,
+			);
+			path = WorkoutApp;
+			sourceTree = "<group>";
+		};
+		D5BF57972992C5D600A6C237 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				D5BF57822992C52C00A6C237 /* AppDelegate.swift */,
 				D5BF57842992C52C00A6C237 /* SceneDelegate.swift */,
-				D5BF57862992C52C00A6C237 /* ViewController.swift */,
-				D5BF57882992C52C00A6C237 /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D5BF57982992C60400A6C237 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				D5BF578B2992C52D00A6C237 /* Assets.xcassets */,
 				D5BF578D2992C52D00A6C237 /* LaunchScreen.storyboard */,
 				D5BF57902992C52D00A6C237 /* Info.plist */,
 			);
-			path = WorkoutApp;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D5BF579B2992D35300A6C237 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D5BF579C2992D37B00A6C237 /* Extensions */,
+				D5BF579F2992D67C00A6C237 /* Resources.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D5BF579C2992D37B00A6C237 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D5BF579D2992D39200A6C237 /* UIColor + ext .swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +165,6 @@
 			files = (
 				D5BF578F2992C52D00A6C237 /* LaunchScreen.storyboard in Resources */,
 				D5BF578C2992C52D00A6C237 /* Assets.xcassets in Resources */,
-				D5BF578A2992C52C00A6C237 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +176,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5BF57872992C52C00A6C237 /* ViewController.swift in Sources */,
+				D5BF579A2992D05A00A6C237 /* TabBarController.swift in Sources */,
 				D5BF57832992C52C00A6C237 /* AppDelegate.swift in Sources */,
+				D5BF57A02992D67C00A6C237 /* Resources.swift in Sources */,
 				D5BF57852992C52C00A6C237 /* SceneDelegate.swift in Sources */,
+				D5BF579E2992D39200A6C237 /* UIColor + ext .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D5BF57882992C52C00A6C237 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5BF57892992C52C00A6C237 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D5BF578D2992C52D00A6C237 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,10 +322,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WorkoutApp/Info.plist;
+				INFOPLIST_FILE = WorkoutApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,7 +337,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,10 +349,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WorkoutApp/Info.plist;
+				INFOPLIST_FILE = WorkoutApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +364,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
