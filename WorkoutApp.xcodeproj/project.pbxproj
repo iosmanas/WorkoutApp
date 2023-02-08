@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D51C3AE529939A6C00F10D7A /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C3AE429939A6C00F10D7A /* NavBarController.swift */; };
+		D51C3AE82993ABB800F10D7A /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C3AE72993ABB800F10D7A /* BaseController.swift */; };
+		D51C3AEA2993C69B00F10D7A /* UIView + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C3AE92993C69B00F10D7A /* UIView + ext.swift */; };
+		D51C3AF32993C94600F10D7A /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C3AF22993C94600F10D7A /* ProgressController.swift */; };
+		D51C3AF52993CA1700F10D7A /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C3AF42993CA1700F10D7A /* SettingsController.swift */; };
+		D51C3AF72993CA6000F10D7A /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C3AF62993CA6000F10D7A /* SessionController.swift */; };
 		D5BF57832992C52C00A6C237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BF57822992C52C00A6C237 /* AppDelegate.swift */; };
 		D5BF57852992C52C00A6C237 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BF57842992C52C00A6C237 /* SceneDelegate.swift */; };
-		D5BF57872992C52C00A6C237 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BF57862992C52C00A6C237 /* ViewController.swift */; };
+		D5BF57872992C52C00A6C237 /* OverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BF57862992C52C00A6C237 /* OverViewController.swift */; };
 		D5BF578C2992C52D00A6C237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BF578B2992C52D00A6C237 /* Assets.xcassets */; };
 		D5BF578F2992C52D00A6C237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BF578D2992C52D00A6C237 /* LaunchScreen.storyboard */; };
 		D5BF579A2992D05A00A6C237 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BF57992992D05A00A6C237 /* TabBarController.swift */; };
@@ -18,10 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D51C3AE429939A6C00F10D7A /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		D51C3AE72993ABB800F10D7A /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		D51C3AE92993C69B00F10D7A /* UIView + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ext.swift"; sourceTree = "<group>"; };
+		D51C3AF22993C94600F10D7A /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
+		D51C3AF42993CA1700F10D7A /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		D51C3AF62993CA6000F10D7A /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		D5BF577F2992C52C00A6C237 /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BF57822992C52C00A6C237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5BF57842992C52C00A6C237 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D5BF57862992C52C00A6C237 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5BF57862992C52C00A6C237 /* OverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverViewController.swift; sourceTree = "<group>"; };
 		D5BF578B2992C52D00A6C237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5BF578E2992C52D00A6C237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5BF57902992C52D00A6C237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +53,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D51C3AE62993AB5F00F10D7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D51C3AEF2993C8DF00F10D7A /* Overview */,
+				D51C3AEE2993C8D600F10D7A /* Session */,
+				D51C3AED2993C8CD00F10D7A /* Progress */,
+				D51C3AEC2993C8C200F10D7A /* Settings */,
+				D51C3AEB2993C89F00F10D7A /* Base */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D51C3AEB2993C89F00F10D7A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D5BF57992992D05A00A6C237 /* TabBarController.swift */,
+				D51C3AE429939A6C00F10D7A /* NavBarController.swift */,
+				D51C3AE72993ABB800F10D7A /* BaseController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D51C3AEC2993C8C200F10D7A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D51C3AF42993CA1700F10D7A /* SettingsController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D51C3AED2993C8CD00F10D7A /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				D51C3AF22993C94600F10D7A /* ProgressController.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		D51C3AEE2993C8D600F10D7A /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				D51C3AF62993CA6000F10D7A /* SessionController.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		D51C3AEF2993C8DF00F10D7A /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				D5BF57862992C52C00A6C237 /* OverViewController.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
 		D5BF57762992C52C00A6C237 = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +128,7 @@
 			children = (
 				D5BF579B2992D35300A6C237 /* Helpers */,
 				D5BF57972992C5D600A6C237 /* Application */,
-				D5BF57862992C52C00A6C237 /* ViewController.swift */,
-				D5BF57992992D05A00A6C237 /* TabBarController.swift */,
+				D51C3AE62993AB5F00F10D7A /* Controllers */,
 				D5BF57982992C60400A6C237 /* SupportingFiles */,
 			);
 			path = WorkoutApp;
@@ -101,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				D5BF579D2992D39200A6C237 /* UIColor + ext .swift */,
+				D51C3AE92993C69B00F10D7A /* UIView + ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -175,11 +241,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5BF57872992C52C00A6C237 /* ViewController.swift in Sources */,
+				D5BF57872992C52C00A6C237 /* OverViewController.swift in Sources */,
+				D51C3AEA2993C69B00F10D7A /* UIView + ext.swift in Sources */,
+				D51C3AF32993C94600F10D7A /* ProgressController.swift in Sources */,
 				D5BF579A2992D05A00A6C237 /* TabBarController.swift in Sources */,
 				D5BF57832992C52C00A6C237 /* AppDelegate.swift in Sources */,
+				D51C3AE529939A6C00F10D7A /* NavBarController.swift in Sources */,
 				D5BF57A02992D67C00A6C237 /* Resources.swift in Sources */,
+				D51C3AF52993CA1700F10D7A /* SettingsController.swift in Sources */,
 				D5BF57852992C52C00A6C237 /* SceneDelegate.swift in Sources */,
+				D51C3AE82993ABB800F10D7A /* BaseController.swift in Sources */,
+				D51C3AF72993CA6000F10D7A /* SessionController.swift in Sources */,
 				D5BF579E2992D39200A6C237 /* UIColor + ext .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
